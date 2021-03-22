@@ -1,0 +1,29 @@
+{%if address.body|length != 0%}
+   <table class="table table-hover">
+        <tr>
+            <td width="70px">
+                <a href="{{ url_for('user', username=address.author.username) }}">
+                    <img src="{{ address.author.avatar(70) }}" />
+                </a>
+            </td>
+            <td>
+                {% set user_link %}
+                    <a href="{{ url_for('user', username=address.author.username) }}">
+                        {{ address.author.username }}
+                    </a>
+                {% endset %}
+                {{ _('%(username)s added address %(when)s',
+                    username=user_link, when=moment(address.timestamp).fromNow()) }}
+                <br>
+                {{ address.body }}
+                <p><a href="{{ url_for('edit', address_id=address.id) }}">{{ _('Edit your address') }}</a></p>
+
+                {% if address.language and address.language != g.locale %}
+                <br><br>
+                <a href="#">{{ _('Translate') }}</a>
+                {% endif %}
+
+            </td>
+        </tr>
+    </table>
+{% endif %}

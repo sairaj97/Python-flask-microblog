@@ -1,0 +1,83 @@
+2020-12-21 20:54:11,247 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-21 20:59:18,601 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-21 21:05:47,218 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-21 21:11:29,451 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 00:03:28,586 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 00:04:15,194 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 00:11:25,682 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 00:11:58,100 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 00:12:09,419 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 14:16:19,409 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 14:29:16,268 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 14:30:39,628 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 14:34:07,320 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 14:36:38,442 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 14:50:50,824 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 15:01:13,543 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 15:25:14,574 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 15:27:46,385 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 15:30:39,196 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 15:36:52,954 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 15:41:37,750 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 15:41:45,733 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 15:43:00,152 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 15:43:31,591 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 16:34:49,160 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 16:35:00,011 ERROR: Exception on /edit_address [GET] [in /Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/kustarddev/Desktop/microblog/app/routes.py", line 222, in edit_address
+    return render_template('edit_address.html', title=_('Edit Address'),
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/kustarddev/Desktop/microblog/app/templates/edit_address.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/kustarddev/Desktop/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/Users/kustarddev/Desktop/microblog/app/templates/base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/Users/kustarddev/Desktop/microblog/app/templates/edit_address.html", line 16, in block "app_content"
+    {% include '_address.html' %}
+  File "/Users/kustarddev/Desktop/microblog/app/templates/_address.html", line 20, in top-level template code
+    <form href="{{ url_for('delete', id=address.address_id) }}" method="POST">
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/helpers.py", line 370, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2216, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/helpers.py", line 357, in url_for
+    rv = url_adapter.build(
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/werkzeug/routing.py", line 2179, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'delete' with values ['id']. Did you forget to specify values ['address_id']?
+2020-12-22 16:36:21,073 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]

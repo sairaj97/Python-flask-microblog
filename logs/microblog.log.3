@@ -1,0 +1,79 @@
+2020-12-22 17:16:22,341 ERROR: Exception on /edit_address [GET] [in /Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-12-22 17:17:03,728 ERROR: Exception on /edit_address [GET] [in /Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2097, in make_response
+    raise TypeError(
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2020-12-22 17:18:32,393 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 18:09:41,039 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 18:11:54,784 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 18:13:27,234 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 18:14:32,099 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 18:25:24,570 INFO: Microblog startup [in /Users/kustarddev/Desktop/microblog/app/__init__.py:52]
+2020-12-22 18:25:43,788 ERROR: Exception on /edit_address [GET] [in /Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py:1891]
+Traceback (most recent call last):
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask_login/utils.py", line 272, in decorated_view
+    return func(*args, **kwargs)
+  File "/Users/kustarddev/Desktop/microblog/app/routes.py", line 223, in edit_address
+    return render_template('edit_address.html', title=_('Edit Address'),
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/templating.py", line 137, in render_template
+    return _render(
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask/templating.py", line 120, in _render
+    rv = template.render(context)
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1090, in render
+    self.environment.handle_exception()
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/kustarddev/Desktop/microblog/app/templates/edit_address.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "/Users/kustarddev/Desktop/microblog/app/templates/base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 4, in block "doc"
+    {%- block html %}
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 20, in block "html"
+    {% block body -%}
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/flask_bootstrap/templates/bootstrap/base.html", line 23, in block "body"
+    {% block content -%}
+  File "/Users/kustarddev/Desktop/microblog/app/templates/base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "/Users/kustarddev/Desktop/microblog/app/templates/edit_address.html", line 16, in block "app_content"
+    {% include '_address.html' %}
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/jinja2/environment.py", line 832, in handle_exception
+    reraise(*rewrite_traceback_stack(source=source))
+  File "/Users/kustarddev/Desktop/microblog/venv/lib/python3.9/site-packages/jinja2/_compat.py", line 28, in reraise
+    raise value.with_traceback(tb)
+  File "/Users/kustarddev/Desktop/microblog/app/templates/_address.html", line 26, in template
+    {% endif %}
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
